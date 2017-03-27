@@ -1,0 +1,727 @@
+{
+  "version": "201701061142",
+  "version_desc": "description",
+  "open_status": true,
+  "blacklist_work": false,
+  "refresh_frequence": 360000,
+  "refresh_time_limite": 300000,
+  "segment_id": 100,
+  "reprot_config": {
+    "report_status": true,
+    "report_time": 300000
+  },
+  "SDK_Config": {
+    "facebook_status": true,
+    "admob_status": true,
+    "mopub_status": true,
+    "facebook_lifetime": 9000000,
+    "admob_lifetime": 2700000,
+    "mopub_lifetime": 21600000
+  },
+  "InterAd_Config": {
+    "enable": true,
+    "interval_time": 60000,
+    "max_show_time": 3,
+    "inter_flow": [
+      {
+        "inter_platform": "facebook",
+        "inter_wight": 40,
+        "inter_slotId": "388231501523981_399456177068180",
+        "inter_slotName": "slotName_facebook"
+      },
+      {
+        "inter_platform": "admob",
+        "inter_wight": 60,
+        "inter_slotId": "ca-app-pub-3561748118948307/6500783870",
+        "inter_slotName": "slotName_admob"
+      }
+    ]
+  },
+  "ADSlot_Config": [
+    {
+      "slot_id": "100016",
+      "slot_name": "keyboard_inner_start",
+      "open_status": true,
+      "show_priority": 2,
+      "cache_size": 1,
+      "load_num": 1,
+      "flow": [
+        [
+          {
+            "platform": "mopub",
+            "open_status": true,
+            "type": "banner",
+            "admob_type": 3,
+            "native_style": 101,
+            "key": "8f55bd8a25ff419f9820819aae7542e2"
+          }
+        ]
+        //      ,
+        //        [
+        //          {
+        //            "platform": "facebook",
+        //            "open_status": true,
+        //            "is_no_cache": false,
+        //            "ad_clcik_enable": 1,
+        //            "type": "native",
+        //            "native_style": 101,
+        //            "key": "1806626559624461_1866967150257068"
+        //          }
+        //        ]
+      ]
+    },
+    {
+      "slot_id": "100018",
+      "slot_name": "keyboard_inner_exit",
+      "open_status": true,
+      "is_auload": false,
+      "show_priority": 2,
+      "cache_size": 1,
+      "load_num": 1,
+      "flow": [
+        [
+          {
+            "platform": "admob",
+            "open_status": true,
+            "type": "native",
+            "admob_type": 3,
+            "native_style": 102,
+            "key": "ca-app-pub-3561748118948307/9216917870"
+          }
+        ]
+        //      ,
+        //        [
+        //          {
+        //            "platform": "facebook",
+        //            "open_status": true,
+        //            "is_no_cache": false,
+        //            "ad_clcik_enable": 1,
+        //            "type": "native",
+        //            "native_style": 102,
+        //            "key": "1806626559624461_1866967193590397"
+        //          }
+        //        ]
+      ]
+    },
+    {
+      "slot_id": "100019",
+      "slot_name": "keyboard_gift",
+      "open_status": true,
+      "is_auload": false,
+      "show_priority": 2,
+      "cache_size": 1,
+      "load_num": 1,
+      "flow": [
+        [
+          {
+            "platform": "admob",
+            "open_status": true,
+            "is_no_cache": false,
+            "type": "native",
+            "admob_type": 3,
+            "native_style": 103,
+            "key": "ca-app-pub-3561748118948307/1693651071"
+          }
+        ]
+        //      ,
+        //        [
+        //          {
+        //            "platform": "facebook",
+        //            "open_status": true,
+        //            "is_no_cache": false,
+        //            "ad_clcik_enable": 1,
+        //            "type": "native",
+        //            "native_style": 103,
+        //            "key": "1806626559624461_1866967220257061"
+        //          }
+        //        ]
+      ]
+    },
+    {
+      "slot_id": "100020",
+      "slot_name": "keyboard_settingfullscreen",
+      "open_status": true,
+      "is_auload": false,
+      "show_priority": 1,
+      "cache_size": 1,
+      "load_num": 1,
+      "request_chance": 50,
+      "calltoaction_move_view_status": 1,
+      "flow": [
+        [
+          //          {
+          //            "platform": "facebook",
+          //            "open_status": true,
+          //            "type": "native",
+          //            "weight": 50,
+          //            "ad_clcik_enable": 1,
+          //            "native_style": 104,
+          //            "key": "191329304603235_223981204671378"
+          //          }
+          //        ,
+          {
+            "platform": "admob",
+            "open_status": true,
+            "type": "native",
+            "weight": 50,
+            "admob_type": 3,
+            "native_style": 104,
+            "key": "ca-app-pub-3561748118948307/1053465475"
+          }
+        ]
+      ]
+    },
+    {
+      "slot_id": "100022",
+      "slot_name": "keyboard_clean",
+      "open_status": true,
+      "is_auload": false,
+      "is_outside_ad": true,
+      "show_priority": 2,
+      "cache_size": 1,
+      "load_num": 1,
+      "calltoaction_move_view_status": 1,
+      "flow": [
+        [
+          {
+            "platform": "admob",
+            "open_status": true,
+            "type": "native",
+            "admob_type": 3,
+            "native_style": 105,
+            "key": "ca-app-pub-3561748118948307/8059961874"
+          }
+        ]
+        //        ,
+        //        [
+        //          {
+        //            "platform": "facebook",
+        //            "open_status": true,
+        //            "type": "native",
+        //            "ad_clcik_enable": 1,
+        //            "native_style": 105,
+        //            "key": "388231501523981_392666567747141"
+        //          }
+        //        ]
+      ]
+    },
+    {
+      "slot_id": "100023",
+      "slot_name": "keyboard_cleanInApp",
+      "open_status": true,
+      "show_priority": 2,
+      "cache_size": 1,
+      "load_num": 1,
+      "flow": [
+        [
+          //          {
+          //            "platform": "facebook",
+          //            "open_status": true,
+          //            "type": "native",
+          //            "weight": 50,
+          //            "ad_clcik_enable": 1,
+          //            "native_style": 201,
+          //            "key": "191329304603235_223981268004705"
+          //          }
+          //        ,
+          {
+            "platform": "admob",
+            "open_status": true,
+            "type": "native",
+            "weight": 50,
+            "admob_type": 3,
+            "native_style": 201,
+            "key": "ca-app-pub-3561748118948307/4006931876"
+          }
+        ]
+      ]
+    },
+    {
+      "slot_id": "100024",
+      "slot_name": "keyboard_eventtwofullscreen",
+      "open_status": true,
+      "show_priority": 2,
+      "cache_size": 1,
+      "request_chance": 50,
+      "load_num": 1,
+      "flow": [
+        [
+          //          {
+          //            "platform": "facebook",
+          //            "open_status": true,
+          //            "ad_clcik_enable": 1,
+          //            "type": "native",
+          //            "weight": 50,
+          //            "native_style": 202,
+          //            "key": "191329304603235_223981278004704"
+          //          }
+          //        ,
+          {
+            "platform": "admob",
+            "open_status": true,
+            "type": "native",
+            "weight": 50,
+            "admob_type": 3,
+            "native_style": 202,
+            "key": "ca-app-pub-3561748118948307/6960398276"
+          }
+        ]
+      ]
+    },
+    {
+      "slot_id": "100025",
+      "slot_name": "keyboard_downloadskinfullscreen",
+      "open_status": true,
+      "show_priority": 2,
+      "cache_size": 1,
+      "request_chance": 50,
+      "load_num": 1,
+      "flow": [
+        [
+          //          {
+          //            "platform": "facebook",
+          //            "open_status": true,
+          //            "type": "native",
+          //            "weight": 50,
+          //            "ad_clcik_enable": 1,
+          //            "native_style": 203,
+          //            "key": "191329304603235_223981318004700"
+          //          }
+          //        ,
+          {
+            "platform": "admob",
+            "open_status": true,
+            "type": "native",
+            "weight": 50,
+            "admob_type": 3,
+            "native_style": 203,
+            "key": "ca-app-pub-3561748118948307/9913864678"
+          }
+        ]
+      ]
+    },
+    {
+      "slot_id": "100026",
+      "slot_name": "keyboard_downloadstickerfullscreen",
+      "open_status": true,
+      "show_priority": 2,
+      "cache_size": 1,
+      "request_chance": 50,
+      "load_num": 1,
+      "flow": [
+        [
+          //          {
+          //            "platform": "facebook",
+          //            "open_status": true,
+          //            "type": "native",
+          //            "weight": 50,
+          //            "ad_clcik_enable": 1,
+          //            "native_style": 204,
+          //            "key": "191329304603235_223981344671364"
+          //          }
+          //        ,
+          {
+            "platform": "admob",
+            "open_status": true,
+            "type": "native",
+            "weight": 50,
+            "admob_type": 3,
+            "native_style": 204,
+            "key": "ca-app-pub-3561748118948307/2390597873"
+          }
+        ]
+      ]
+    },
+    {
+      "slot_id": "100027",
+      "slot_name": "keyboard_midskin",
+      "open_status": true,
+      "show_priority": 2,
+      "cache_size": 1,
+      "load_num": 1,
+      "flow": [
+        [
+          //          {
+          //            "platform": "facebook",
+          //            "open_status": true,
+          //            "type": "native",
+          //            "weight": 50,
+          //            "ad_clcik_enable": 1,
+          //            "native_style": 301,
+          //            "key": "191329304603235_223981411338024"
+          //          }
+          //        ,
+          {
+            "platform": "admob",
+            "open_status": true,
+            "type": "native",
+            "weight": 50,
+            "admob_type": 3,
+            "native_style": 301,
+            "key": "ca-app-pub-3561748118948307/3867331078"
+          }
+        ]
+      ]
+    },
+    {
+      "slot_id": "100028",
+      "slot_name": "keyboard_midsticker",
+      "open_status": true,
+      "show_priority": 2,
+      "cache_size": 1,
+      "load_num": 1,
+      "flow": [
+        [
+          //          {
+          //            "platform": "facebook",
+          //            "open_status": true,
+          //            "type": "native",
+          //            "weight": 50,
+          //            "ad_clcik_enable": 1,
+          //            "native_style": 302,
+          //            "key": "191329304603235_223981458004686"
+          //          }
+          //        ,
+          {
+            "platform": "admob",
+            "open_status": true,
+            "type": "native",
+            "weight": 50,
+            "admob_type": 3,
+            "native_style": 302,
+            "key": "ca-app-pub-3561748118948307/5344064277"
+          }
+        ]
+      ]
+    },
+    {
+      "slot_id": "100029",
+      "slot_name": "keyboard_bottomskin",
+      "open_status": true,
+      "show_priority": 2,
+      "cache_size": 1,
+      "load_num": 1,
+      "flow": [
+        [
+          //          {
+          //            "platform": "facebook",
+          //            "open_status": true,
+          //            "type": "native",
+          //            "weight": 50,
+          //            "ad_clcik_enable": 1,
+          //            "native_style": 303,
+          //            "key": "191329304603235_223981491338016"
+          //          }
+          //        ,
+          {
+            "platform": "admob",
+            "open_status": true,
+            "type": "native",
+            "weight": 50,
+            "admob_type": 3,
+            "native_style": 303,
+            "key": "ca-app-pub-3561748118948307/6820797473"
+          }
+          //        ,
+          //          {
+          //            "platform": "mopub",
+          //            "open_status": true,
+          //            "type": "native",
+          //            "weight": 50,
+          //            "mopub_type": 2,
+          //            "native_style": 4,
+          //            "key": "5b150dd9410b4ba9bf92ab8967a1b40d"
+          //          }
+        ]
+      ]
+    },
+    {
+      "slot_id": "100030",
+      "slot_name": "keyboard_bottomsticker",
+      "open_status": true,
+      "show_priority": 2,
+      "cache_size": 1,
+      "load_num": 1,
+      "flow": [
+        [
+          //          {
+          //            "platform": "facebook",
+          //            "open_status": true,
+          //            "type": "native",
+          //            "ad_clcik_enable": 1,
+          //            "native_style": 304,
+          //            "key": "191329304603235_223981518004680"
+          //          }
+          //        ,
+          {
+            "platform": "admob",
+            "open_status": true,
+            "type": "native",
+            "weight": 50,
+            "admob_type": 3,
+            "native_style": 304,
+            "key": "ca-app-pub-3561748118948307/8297530679"
+          }
+        ]
+      ]
+    },
+    {
+      "slot_id": "100031",
+      "slot_name": "keyboard_batterygift",
+      "open_status": true,
+      "is_outside_ad": true,
+      "show_priority": 2,
+      "cache_size": 1,
+      "load_num": 1,
+      "flow": [
+        [
+          //          {
+          //            "platform": "facebook",
+          //            "open_status": true,
+          //            "type": "native",
+          //            "weight": 50,
+          //            "ad_clcik_enable": 1,
+          //            "native_style": 305,
+          //            "key": "191329304603235_223981551338010"
+          //          }
+          //        ,
+          {
+            "platform": "admob",
+            "open_status": true,
+            "type": "native",
+            "weight": 50,
+            "admob_type": 3,
+            "native_style": 305,
+            "key": "ca-app-pub-3561748118948307/9774263879"
+          }
+        ]
+      ]
+    },
+    {
+      "slot_id": "100032",
+      "slot_name": "keyboard_standby_guard_1",
+      "open_status": true,
+      "is_auload": false,
+      "is_outside_ad": true,
+      "show_priority": 2,
+      "cache_size": 1,
+      "load_num": 1,
+      "calltoaction_move_view_status": 1,
+      "flow": [
+        //        [
+        //          {
+        //            "platform": "facebook",
+        //            "open_status": true,
+        //            "type": "native",
+        //            "ad_clcik_enable": 1,
+        //            "native_style": 306,
+        //            "key": "388231501523981_392666627747135"
+        //          }
+        //        ]
+        //      ,
+        [
+          {
+            "platform": "admob",
+            "open_status": true,
+            "type": "native",
+            "admob_type": 3,
+            "native_style": 306,
+            "key": "ca-app-pub-3561748118948307/9536695075"
+          }
+        ]
+      ]
+    },
+    {
+      "slot_id": "100033",
+      "slot_name": "keyboard_standby_guard_2",
+      "open_status": true,
+      "is_outside_ad": true,
+      "show_priority": 2,
+      "cache_size": 1,
+      "load_num": 1,
+      "flow": [
+        //        [
+        //          {
+        //            "platform": "facebook",
+        //            "open_status": true,
+        //            "type": "native",
+        //            "weight": 50,
+        //            "ad_clcik_enable": 1,
+        //            "native_style": 307,
+        //            "key": "1806626559624461_1850897075197409"
+        //          }
+        //        ]
+        //      ,
+        [
+          {
+            "platform": "admob",
+            "open_status": true,
+            "type": "native",
+            "weight": 50,
+            "ad_clcik_enable": 1,
+            "admob_type": 3,
+            "native_style": 307,
+            "key": "ca-app-pub-3561748118948307/6919160276"
+          }
+        ]
+      ]
+    },
+    {
+      "slot_id": "100035",
+      "slot_name": "keyboard_spacefullscreen",
+      "open_status": true,
+      "show_priority": 2,
+      "cache_size": 1,
+      "frequency": 2,
+      "daily_times": 1,
+      "flow": [
+        [
+          //          {
+          //            "platform": "facebook",
+          //            "open_status": true,
+          //            "type": "native",
+          //            "weight": 50,
+          //            "ad_clcik_enable": 1,
+          //            "native_style": 8,
+          //            "key": "191329304603235_223981814671317"
+          //          },
+          {
+            "platform": "admob",
+            "open_status": true,
+            "type": "banner",
+            "weight": 50,
+            "admob_type": 0,
+            "native_style": 8,
+            "key": "ca-app-pub-3561748118948307/9634663079"
+          }
+        ]
+      ]
+    },
+    {
+      "slot_id": "100036",
+      "slot_name": "keyboard_batterylockscreen_1",
+      "open_status": true,
+      "is_auload": false,
+      "is_outside_ad": true,
+      "show_priority": 2,
+      "cache_size": 1,
+      "load_num": 1,
+      "calltoaction_move_view_status": 1,
+      "flow": [
+        [
+          {
+            "platform": "admob",
+            "open_status": true,
+            "type": "banner",
+            "admob_type": 3,
+            "native_style": 21,
+            "key": "ca-app-pub-3561748118948307/6583228671"
+          }
+        ],
+        [
+          {
+            "platform": "facebook",
+            "open_status": true,
+            "type": "native",
+            "ad_clcik_enable": 1,
+            "native_style": 21,
+            "key": "388231501523981_392666551080476"
+          }
+        ]
+      ]
+    },
+    {
+      "slot_id": "100041",
+      "slot_name": "keyboard_giftfullscreen",
+      "show_priority": 2,
+      "open_status": true,
+      "cache_size": 1,
+      "load_num": 1,
+      "flow": [
+        [
+          //          {
+          //            "platform": "facebook",
+          //            "open_status": true,
+          //            "type": "interstitial",
+          //            "weight": 50,
+          //            "ad_clcik_enable": 1,
+          //            "native_style": 0,
+          //            "key": "191329304603235_223981651338000"
+          //          }
+          //        ,
+          {
+            "platform": "admob",
+            "open_status": true,
+            "type": "interstitial",
+            "weight": 50,
+            "admob_type": 0,
+            "native_style": 8,
+            "key": "ca-app-pub-3561748118948307/3727730278"
+          }
+        ]
+      ]
+    },
+    {
+      "slot_id": "100042",
+      "slot_name": "keyboard_onthekeyboard",
+      "show_priority": 2,
+      "open_status": true,
+      "cache_size": 1,
+      "request_chance": 5,
+      "load_num": 1,
+      "frequency": 2,
+      "daily_times": 1,
+      "flow": [
+        [
+          {
+            "platform": "facebook",
+            "type": "interstitial",
+            "weight": 50,
+            "ad_clcik_enable": 1,
+            "native_style": 1,
+            "key": "191329304603235_223981694671329"
+          }
+          //        ,
+          //          {
+          //            "platform": "admob",
+          //            "open_status": true,
+          //            "type": "interstitial",
+          //            "weight": 50,
+          //            "admob_type": 3,
+          //            "native_style": 1,
+          //            "key": "ca-app-pub-3561748118948307/5204463479"
+          //          }
+        ]
+      ]
+    },
+    {
+      "slot_id": "100034",
+      "slot_name": "keyboard_onthekeyboard",
+      "show_priority": 2,
+      "open_status": true,
+      "cache_size": 1,
+      "flow": [
+        [
+          //          {
+          //            "platform": "facebook",
+          //            "type": "natvie",
+          //            "weight": 50,
+          //            "ad_clcik_enable": 1,
+          //            "native_style": 1,
+          //            "key": "191329304603235_223981694671329"
+          //          }
+          //        ,
+          {
+            "platform": "admob",
+            "open_status": true,
+            "type": "native",
+            "weight": 50,
+            "admob_type": 3,
+            "native_style": 1,
+            "key": "ca-app-pub-3561748118948307/5204463479"
+          }
+        ]
+      ]
+    }
+  ]
+}

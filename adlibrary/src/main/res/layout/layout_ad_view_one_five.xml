@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="85dp"
+    android:id="@+id/rl_view_container"
+    android:background="@drawable/shape_ad_corners_bg">
+
+    <RelativeLayout
+        android:id="@+id/calltoaction_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <TextView
+            android:id="@+id/calltoaction_text"
+            android:layout_width="72dp"
+            android:layout_height="34dp"
+            android:background="@drawable/shape_call_to_action_back3"
+            android:gravity="center"
+            android:padding="3dp"
+            android:singleLine="true"
+            android:text="install"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_root"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@id/calltoaction_layout"
+        >
+
+        <RelativeLayout
+            android:id="@+id/rl_fl_imageLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+            <ImageView
+                android:id="@+id/ad_cover_image"
+                android:layout_width="94dp"
+                android:layout_height="85dp"
+                android:layout_alignParentTop="true"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/ad_cover_back_new" />
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dp"
+            android:layout_toRightOf="@+id/rl_fl_imageLayout"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/ad_title_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:text="this is title"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#070707"
+                android:textSize="18sp" />
+            <TextView
+                android:id="@+id/ad_subtitle_Text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/calltoaction_layout"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="this is sub"
+                android:layout_marginTop="5dp"
+                android:textColor="#9B9B9B"
+                android:textSize="12sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <RatingBar
+                    android:id="@+id/ad_ratingbar"
+                    style="?android:attr/ratingBarStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:isIndicator="true"
+                    android:rating="5"
+                    android:stepSize="0.1" />
+
+                <TextView
+                    android:id="@+id/ad_appraise_counts_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="(500)"
+                    android:textColor="@color/ad_view_sub_title"
+                    android:textSize="13sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/ad_resource_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <ImageView
+            android:id="@+id/ad_icon_image"
+            android:layout_width="20dp"
+            android:layout_height="12dp"
+            android:layout_gravity="start"
+            android:background="@drawable/ad_icon_new" />
+
+        <ImageView
+            android:id="@+id/native_ad_choices_image"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="right" />
+    </RelativeLayout>
+
+</RelativeLayout>

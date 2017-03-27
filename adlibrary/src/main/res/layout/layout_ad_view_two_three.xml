@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:id="@+id/rl_view_container"
+        android:background="@color/white">
+        <RelativeLayout
+            android:id="@+id/ad_resource_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp">
+            <ImageView
+                android:id="@+id/ad_icon_image"
+                android:layout_width="20dp"
+                android:layout_height="12dp"
+                android:layout_gravity="start"
+                android:background="@drawable/ad_icon_new" />
+            <ImageView
+                android:id="@+id/native_ad_choices_image"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="right" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_root"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ad_resource_layout"
+            android:layout_marginBottom="12dp"
+            android:layout_toLeftOf="@id/calltoaction_layout">
+
+            <ImageView
+                android:id="@+id/icon_image_native"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/default_icon_bg" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_toRightOf="@+id/icon_image_native"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/ad_title_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="this is title"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#333333"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/ad_subtitle_Text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:maxLines="2"
+                    android:text="this is subtitledf dsfdsfdsfdsf dsfdsfdsfdsfdfdsfdsfdsfdsfdsfdsfdsfdsfdsfdsdfsdf"
+                    android:textColor="@color/ad_view_sub_title"
+                    android:textSize="10sp" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/calltoaction_text"
+            android:layout_width="185dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/layout_root"
+            android:layout_centerInParent="true"
+            android:background="@drawable/selector_action_button_background"
+            android:gravity="center"
+            android:padding="3dp"
+            android:singleLine="true"
+            android:text="install"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+    </RelativeLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="call_to_action_normal">#ffb537</color>
+    <color name="call_to_action__pressed">#009e8f</color>
+    <color name="white">#ffffff</color>
+    <color name="transparent">#00000000</color>
+    <color name="transparent70">#70000000</color>
+    <color name="transparent75">#75000000</color>
+    <color name="gray_white">#44000000</color>
+    <color name="black_transparent40">#31000000</color>
+
+    <color name="ad_view_back">#333333</color>
+    <color name="ad_view_title">#333333</color>
+    <color name="ad_view_sub_title">#bbbbbb</color>
+    <color name="ad_standby_two_action">#43546D</color>
+    <color name="ad_view_calltoaction">#00a652</color>
+    <color name="ad_view_full_bg">#d113171f</color>
+    <color name="black">#000000</color>
+    <color name="gray_white_title">#FEFEFE</color>
+
+</resources>

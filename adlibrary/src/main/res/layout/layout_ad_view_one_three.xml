@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:id="@+id/rl_view_container"
+    android:background="@color/transparent70">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/layout_root"
+            android:layout_width="0dp"
+            android:layout_weight="12"
+            android:layout_height="match_parent"
+        >
+
+            <ImageView
+                android:id="@+id/icon_image_native"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="27dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/default_icon_bg" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/icon_image_native"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_weight="1"
+                    android:id="@+id/ad_title_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="this is title"
+                    android:layout_marginTop="10dp"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#ffffff"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_weight="1"
+                    android:id="@+id/ad_subtitle_Text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:maxLines="1"
+                    android:text="content"
+                    android:layout_marginBottom="10dp"
+                    android:textColor="#cccccc"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_weight="10"
+            android:id="@+id/calltoaction_layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/call_to_action_left"
+            android:layout_marginRight="8dp">
+
+            <TextView
+                android:id="@+id/calltoaction_text"
+                android:layout_width="150dp"
+                android:layout_height="45dp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/calltoaction_green"
+                android:gravity="center"
+                android:singleLine="true"
+                android:paddingLeft="35dp"
+                android:text="Learn More"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/ad_resource_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp">
+
+        <ImageView
+            android:id="@+id/ad_icon_image"
+            android:layout_width="24dp"
+            android:layout_height="15dp"
+            android:layout_gravity="start"
+            android:background="@drawable/ad_icon_new" />
+
+        <ImageView
+            android:id="@+id/native_ad_choices_image"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="right" />
+    </RelativeLayout>
+</RelativeLayout>

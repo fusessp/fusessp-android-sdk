@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout   xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/rl_view_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <RelativeLayout
+            android:id="@+id/ad_resource_layout"
+            android:layout_width="match_parent"
+            android:layout_height="152dp"
+            >
+            <RelativeLayout
+                android:id="@+id/rl_fl_imageLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                >
+                <com.google.android.gms.ads.formats.MediaView
+                    android:id="@+id/ad_admob_cover_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ad_cover_back_new"
+                    android:visibility="gone">
+                </com.google.android.gms.ads.formats.MediaView>
+
+                <com.facebook.ads.MediaView
+                    android:id="@+id/ad_fb_cover_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitXY"
+                    android:visibility="gone"
+                    android:src="@drawable/ad_cover_back_new" />
+                <ImageView
+                    android:id="@+id/ad_cover_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ad_cover_back_new" />
+            </RelativeLayout>
+            <ImageView
+                android:id="@+id/ad_icon_image2"
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:layout_gravity="start"
+                android:background="@drawable/ad_icon_image2" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginRight="4dp"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="right"
+            >
+            <ImageView
+                android:id="@+id/native_ad_choices_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/ad_view_five_top_parent"
+            android:layout_width="match_parent"
+            android:layout_below="@id/ad_resource_layout"
+            android:background="#1a2d4c"
+            android:layout_height="48dp">
+
+            <RelativeLayout
+                android:id="@+id/calltoaction_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="26dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/call_to_action_left"
+                android:layout_marginRight="9dp">
+
+                <TextView
+                    android:id="@+id/calltoaction_text"
+                    android:layout_width="@dimen/call_to_action_width"
+                    android:layout_height="@dimen/call_to_action_hight"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/shape_call_to_action_back2"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:singleLine="true"
+                    android:text="install"
+                    android:textColor="#35d018"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout_root"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/calltoaction_layout">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="8dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/ad_title_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="this is title"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="#ffffff"
+                        android:textSize="13sp" />
+                    <TextView
+                        android:id="@+id/ad_subtitle_Text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="this is sub"
+                        android:textColor="#5b687f"
+                        android:textSize="11sp" />
+                </LinearLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>

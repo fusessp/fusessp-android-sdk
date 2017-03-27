@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rl_view_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/shape_ad_corners_bg"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="171dp">
+            <RelativeLayout
+                android:id="@+id/rl_fl_imageLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:gravity="center_horizontal"
+                >
+
+                <com.google.android.gms.ads.formats.MediaView
+                    android:id="@+id/ad_admob_cover_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="171dp"
+                    android:layout_alignParentTop="true"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ad_cover_back_new"
+                    android:visibility="gone">
+                </com.google.android.gms.ads.formats.MediaView>
+
+                <!--<com.facebook.ads.MediaView-->
+                    <!--android:id="@+id/ad_fb_cover_image"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="171dp"-->
+                    <!--android:layout_alignParentTop="true"-->
+                    <!--android:adjustViewBounds="true"-->
+                    <!--android:scaleType="fitXY"-->
+                    <!--android:visibility="gone"-->
+                    <!--android:src="@drawable/ad_cover_back_new" />-->
+
+                <ImageView
+                    android:id="@+id/ad_cover_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="171dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ad_cover_back_new"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/layout_root"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/shape_title_gradient_bg"
+                android:gravity="center_vertical"
+                >
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:id="@+id/icon_image_native"
+                    android:layout_width="33dp"
+                    android:layout_height="33dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="12dp"
+                    app:riv_corner_radius="3dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/default_icon_bg" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@+id/icon_image_native"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/ad_title_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:ellipsize="end"
+                        android:text="this is title"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="@color/white"
+                        android:textSize="14sp" />
+                    <TextView
+                        android:id="@+id/ad_subtitle_Text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginTop="1dp"
+                        android:layout_toLeftOf="@id/calltoaction_layout"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="this is sub"
+                        android:textColor="@color/white"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/ad_icon_image"
+                    android:layout_width="20dp"
+                    android:layout_height="12dp"
+                    android:background="@drawable/ad_icon_new" />
+                <ImageView
+                    android:id="@+id/native_ad_choices_image"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                     />
+            </RelativeLayout>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+            android:layout_marginTop="12dp"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/calltoaction_text"
+                android:layout_width="match_parent"
+                android:layout_height="37dp"
+                android:background="@drawable/shape_call_to_action_back3"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="install"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</LinearLayout>

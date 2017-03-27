@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="mobi.android.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/frist_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:text="@string/main_label_name"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/NativeAdsSmall"
+            android:layout_width="300dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="Native Ads - Small" />
+
+        <Button
+            android:id="@+id/NativeAdsMedium"
+            android:layout_width="300dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="Native Ads - Medium" />
+
+        <Button
+            android:id="@+id/NativeAdsLarge"
+            android:layout_width="300dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="Native Ads - Large" />
+
+        <Button
+            android:id="@+id/NativeAdsCustomize"
+            android:layout_width="300dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="Native Ads - Customize" />
+
+        <Button
+            android:id="@+id/InterstitialAdsAdmob"
+            android:layout_width="300dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="Interstitial Ads " />
+
+        <Button
+            android:id="@+id/InterstitialAdsFacebook"
+            android:layout_width="300dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="Interstitial Ads - Facebook"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/BannerAdsAdmob"
+            android:layout_width="300dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="Banner Ads " />
+
+        <Button
+            android:id="@+id/BannerAdsMopub"
+            android:layout_width="300dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="Banner Ads - Mopub"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rl_view_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/rl_cover"
+        android:layout_weight="38">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="45dp"
+            android:layout_marginRight="45dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@color/white"
+            android:rotation="354"
+            android:padding="5dp"
+            >
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clickable="false"
+                android:scaleType="centerCrop"
+                android:id="@+id/ad_cover_image_next"
+                android:src="@drawable/ad_cover_back_new"
+                />
+
+        </RelativeLayout>
+       <RelativeLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginLeft="45dp"
+           android:layout_marginRight="45dp"
+           android:layout_marginTop="20dp"
+           android:background="@color/white"
+           android:padding="5dp"
+           android:layout_marginBottom="20dp"
+           >
+
+           <ImageView
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:id="@+id/ad_cover_image"
+               android:scaleType="centerCrop"
+               android:src="@drawable/ad_cover_back_new"
+               android:layout_alignParentTop="true"
+               android:layout_alignParentLeft="true"
+               android:layout_alignParentStart="true" />
+
+           <ImageView
+               android:layout_width="10dp"
+               android:layout_height="10dp"
+               android:background="@drawable/ad_icon_image2"/>
+
+       </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="21"
+        android:id="@+id/rl_icon"
+        android:gravity="center"
+        >
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/icon_image_native"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_centerVertical="true"
+            app:riv_corner_radius="6dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/default_icon_bg"
+            />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="15"
+        android:orientation="vertical"
+        android:id="@+id/rl_text"
+        android:paddingLeft="45dp"
+        android:paddingRight="45dp"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:paddingTop="4dp"
+            android:id="@+id/ad_title_text"
+            android:singleLine="true"
+            android:text="this is title"
+            android:gravity="center_horizontal"
+            android:textColor="@color/gray_white_title"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="16sp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:paddingBottom="4dp"
+            android:id="@+id/ad_subtitle_Text"
+            android:singleLine="true"
+            android:text="this is sub"
+            android:gravity="center_horizontal"
+            android:textColor="@color/gray_white_title"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="14sp"
+           />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="17"
+        android:id="@+id/rl_cta"
+        android:paddingLeft="45dp"
+        android:paddingRight="45dp"
+        android:layout_marginBottom="15dp"
+        >
+        <TextView
+            android:gravity="center"
+            android:id="@+id/calltoaction_text"
+            android:textColor="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/shape_call_to_action_back3"
+            android:textSize="18sp"
+            android:text="DownLoad"/>
+    </RelativeLayout>
+
+</LinearLayout>
+
